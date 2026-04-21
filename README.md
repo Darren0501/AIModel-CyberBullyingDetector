@@ -1,21 +1,21 @@
-# 🛡️ Cyberbullying Detection System (ML & Streamlit)
+# Cyberbullying Detection System (ML & Streamlit)
 
 An interactive, web-based Machine Learning application designed to detect and prevent cyberbullying comments in real-time. This project goes beyond static text classification by implementing a **Human-in-the-Loop (Continuous Learning)** architecture, allowing the model to be dynamically corrected and retrained directly through an admin dashboard.
 
-## 🚀 Key Features
+## Key Features
 * **Social Media Simulation (Real-time Inference):** Users can type comments, and the system will instantly block or allow the message based on AI predictions.
 * **Probability & Confidence Scoring:** Displays the Top 3 violation categories (e.g., *Hate Speech, Abusive*) alongside their calculated confidence scores.
 * **Human-in-the-Loop (AI Correction):** A dedicated Admin Dashboard to test sentences, view predictions, and provide feedback (correcting labels if the AI makes a mistake).
 * **One-Click Dynamic Retraining:** Admins can trigger model retraining directly from the UI. The system seamlessly merges new feedback data with the main dataset to produce a smarter, updated model.
 
-## 🛠️ Tech Stack & Libraries
+## Tech Stack & Libraries
 * **Language:** Python
 * **Frontend/UI:** Streamlit
 * **Machine Learning:** Scikit-Learn (Support Vector Machine)
 * **NLP Processing:** TF-IDF Vectorizer (N-grams)
 * **Data Handling:** Pandas, Joblib
 
-## 🧠 Technical Highlights
+## Technical Highlights
 This project demonstrates proficiency in advanced Machine Learning engineering workflows:
 
 1. **Pipeline Architecture:** Utilizes `sklearn.pipeline.Pipeline` to bundle the `TfidfVectorizer` and the Classifier, preventing data leakage and streamlining the inference process.
@@ -46,10 +46,3 @@ cd cyberbullying-detection
 4. Run the application:
    ```bash
    streamlit run MainApp.py
-
-## Main Directory Structure
-* /src/model/: Contains data entities (User, Patient, Doctor, Booking, MedicalRecord, etc.).
-
-* /src/service/: Contains HealthcareSystem.java as the primary business logic manager.
-
-* /src/util/: Contains FileHandler.java for reading/writing data to local storage.
