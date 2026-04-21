@@ -138,5 +138,5 @@ df_final = df_final.dropna()
 print(f"\n📊 TOTAL DATA: {len(df_final)}")
 print(df_final['Label_Final'].value_counts())
 
-df_final[['text', 'Label_Final']].to_csv('DATASET_UTAMA.csv', index=False)
+df_final[['text', 'Label_Final']].to_csv('Dataset/DATASET_UTAMA.csv', index=False)
 
