@@ -5,12 +5,12 @@ import os
 import time
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
-from sklearn.calibration import CalibratedClassifierCV  # <--- WAJIB ADA
+from sklearn.calibration import CalibratedClassifierCV  
 from sklearn.pipeline import Pipeline
 
 MODEL_PATH = 'model_svm.pkl'
-DATA_PATH = 'DATASET_UTAMA.csv'
-FEEDBACK_PATH = 'temp_feedback.csv'
+DATA_PATH = 'Dataset/DATASET_UTAMA.csv'
+FEEDBACK_PATH = 'Dataset/temp_feedback.csv'
 
 st.set_page_config(page_title="Sistem Deteksi Cyberbullying", layout="wide", page_icon="🛡️")
 
