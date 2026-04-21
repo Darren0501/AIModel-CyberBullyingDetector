@@ -32,7 +32,7 @@ Ensure you have Python 3.8+ installed. Using a virtual environment (venv) is hig
 ### Installation & Execution
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/Darren0501/AIModel-CyberbUllyingDetector.git]
+   git clone https://github.com/Darren0501/AIModel-CyberbUllyingDetector.git
 cd cyberbullying-detection
 
 2. Navigate to the project directory:
